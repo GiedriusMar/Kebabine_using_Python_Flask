@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h3> Pasirinktas produktas:  {{ id }} </h3>
+    <br>
+
+    <h4> Product: {{ product.product }} </h4>
+    <h4> Ingredients: {{ product.ingredients }} </h4>
+    <h4> Extra added: {{ product.extra }} </h4>
+    <h4> Price: {{ product.price }} EUR </h4>
+
+
+   <h3> <a class="btn" href="{{ url_for('products') }}"> <button>Back</button </a> </h3>
+    <a class="btn" href="{{ url_for('delete_product', id=product.product_id) }}"> <button>Delete this product</button>  </a>
+
+
+{% endblock %}
