@@ -11,9 +11,9 @@ from flask_migrate import Migrate
 class Product(db.Model):
     __tablename__ = 'products'
     product_id = db.Column(db.Integer, primary_key=True)
-    product = db.Column(db.String(100), nullable=False, default='Kebabas')
+    product = db.Column(db.String(100), nullable=False, default='Kebab')
     price = db.Column(db.Float, nullable=False, default=10.0)
-    ingredients = db.Column(db.String(250), nullable=True, default='Mesa')
+    ingredients = db.Column(db.String(250), nullable=True, default='Lamb')
     extra = db.Column(db.String(150), nullable=False)
     created_date = db.Column(db.DateTime, default=datetime.now(), nullable=True)
 
