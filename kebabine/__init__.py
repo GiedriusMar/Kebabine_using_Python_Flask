@@ -16,5 +16,5 @@ db.create_all()
 from kebabine.models import *
 from kebabine import routes
 
-
 # Migrate(app, db)
+
