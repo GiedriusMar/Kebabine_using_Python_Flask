@@ -34,7 +34,16 @@ nav div {
     max-height: 1rem;
 }
 h3 {
-    color:white;
+    color:lightyellow;
+}
+.prd {
+    color:lightyellow;
+    width: 70%;
+    margin: auto;
+}
+
+h5 {
+    color:lightyellow;
     width: 70%;
     margin: auto;
 }
@@ -104,9 +113,15 @@ margin-left: 400px;
 .contacts {
     width: 50%;
     margin: auto;
-    display:block;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
     text-align: left;
 }
+.google-map{
+margin-top: 100px;
+    grid-column: 2/5;
+}
+
 form{
     max-width: 50%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -130,4 +145,17 @@ text-align: left;
 }
 input {
 height: 2rem;
+}
+/*.flash {*/
+/*max-width: 53%;*/
+/*height: 30px;*/
+/*}*/
+.message {
+color: yellow;
+margin: auto;
+text-align: center;
+vertical-align: middle;
+}
+navbar a .yellowbtn {
+color: yellow;
 }
