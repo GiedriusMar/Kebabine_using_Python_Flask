@@ -5,27 +5,42 @@
 <section>
     <h3>Add NEW PRODUCT into the form below:</h3>
 </section>
-
 <br>
-<form action="{{ url_for('add_product') }}", method="POST">
+<div class="flash">
+        {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+         <h4 class="message">{{ message }}</h4>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</div>
+
+<form action="{{ url_for('add_product') }}" method="POST" enctype="multipart/form-data">
     <div class="form-add-product">
         <label for="product">Add product description:</label>
-        <input type="text" class="form-input" id="product" name="product">
+        <input type="text" class="form-input" id="product" name="product" required>
     </div>
     <div class="form-add-product">
         <label for="price">Add product price, €:</label>
-        <input type ="number" class ="price" name="price" id="price" step="0.01">
+        <input type ="number" class ="price" name="price" id="price" step="0.01" required>
     </div>
     <div class="form-add-product">
         <label for="ingredients">Add ingredients:</label>
-        <input type="text" class="form-input" name="ingredients" id="ingredients">
+        <input type="text" class="form-input" name="ingredients" id="ingredients" required>
     </div>
     <div class="form-add-product">
         <label for="extra">Add extra ingredients (sauce, etc.):</label>
         <input type="text" class="form-input" id="extra" name="extra">
     </div>
+    <div>
+        <label for="image">Add product image:</label>
+        <input type="file" class="form-input" name="image" id="image" accept="image/png, image/jpeg" required>
+    </div>
     <button type="submit" class="btn">Add Product</button>
-    <a href="{{ url_for('products') }}"> <button class="btn" id="bacback">Back to Products</button></a>
 </form>
+
 
 {% endblock %}
