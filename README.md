@@ -15,10 +15,10 @@ The application simulates a simple "Kebab shop" website where users can browse t
 - [Contact](#contact)
 
 ## Features
-- **User Authentication**: Log in to access personalized features (to add or delete products from DB).
 - **Menu Management**: View a list of available products with details, product pictures and prices.
-- **Upload new product via HTML form**: Add new item to the database including product picture.
-- **Delete product**: Delete product from database just from HTML Admin page.
+- **User Authentication**: Log in to access personalized features (to add or delete products from DB).
+- **Upload new product via HTML form**: Add new item (upload product) to database, including product picture - direct from website HTML application.
+- **Delete product**: Delete product from database - direct from website HTML application.
 
 ## Project Structure
 
