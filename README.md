@@ -15,7 +15,6 @@ Welcome to the **Kebabine** project! This repository contains a web application 
 
 ## Project Structure
 
-```
 Kebabine_using_Python_Flask/
 ├── app/
 │   ├── __init__.py
@@ -37,7 +36,7 @@ Kebabine_using_Python_Flask/
 ├── config.py
 ├── requirements.txt
 └── README.md
-```
+
 
 ## Contributing
 
@@ -60,6 +59,6 @@ If you have any questions, feel free to reach out:
 - **Giedrius Mar** - [GitHub](https://github.com/GiedriusMar)
 
 Happy coding!
-```
+
 
 Feel free to customize the sections further based on any specific details or additional functionalities you want to highlight in the repository.
