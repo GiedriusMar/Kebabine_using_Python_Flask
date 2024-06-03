@@ -60,7 +60,6 @@ If you have any questions, feel free to reach out:
 
 - **Giedrius Mar** - [GitHub](https://github.com/GiedriusMar)
 
+P.S. Feel free to customize the sections further based on any specific details or additional functionalities you want to highlight in the repository.
+
 Happy coding!
-
-
-Feel free to customize the sections further based on any specific details or additional functionalities you want to highlight in the repository.
