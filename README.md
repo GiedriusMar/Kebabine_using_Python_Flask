@@ -14,15 +14,15 @@ The application simulates a simple kebab shop where users can browse the menu, p
 - [Contact](#contact)
 
 ## Features
-- **User Authentication**: Register and log in to access personalized features.
-- **Menu Management**: View a list of available kebabs with details and prices.
-- **Upload new product via HTML form**: Add new items to the database includin product picture.
+- **User Authentication**: Log in to access personalized features (to add or delete products from DB).
+- **Menu Management**: View a list of available products with details, product pictures and prices.
+- **Upload new product via HTML form**: Add new item to the database including product picture.
 - **Delete product**: Delete product from database just from HTML Admin page.
 
 ## Project Structure
 
 ```
-flask_sql_web/
+PYTHON PROJECT/
 │
 ├── .venv/
 │
