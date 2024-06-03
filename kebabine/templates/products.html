@@ -19,7 +19,7 @@
             <tr>
               <td> {{ loop.index }} </td>
               <td> <a href="{{ url_for('product', id=product.product_id) }}"> {{ product.product }} </a> </td>
-              <td> <img src="{{url_for('static', filename='product.image_filename')}}"</td>
+              <td> <img src="{{url_for('static', filename='product.image_filename')}}"> </td>
               <td> {{ product.ingredients }} </td>
               <td> {{ product.extra }} </td>
               <td class="price"> {{ product.price }} €</td>
