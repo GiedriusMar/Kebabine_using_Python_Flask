@@ -8,6 +8,7 @@ The application simulates a simple kebab shop where users can browse the menu, p
 ## Table of Contents
 - [Features](#features)
 - [Project Structure](#project-structure)
+- [Explanation of Directories and Files](#explanation-of-directories-and-files)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -21,29 +22,74 @@ The application simulates a simple kebab shop where users can browse the menu, p
 ## Project Structure
 
 ```
-Kebabine_using_Python_Flask/
-├── app/
-│   ├── __init__.py
-│   ├── models.py
-│   ├── routes.py
+flask_sql_web/
+│
+├── .venv/
+│
+├── database/
+│   └── kebabine_db.sqlite
+│
+├── kebabine/
+│   ├── static/
+│   │   ├── images/
+│   │   │   ├── kebab-shop-bg.jpg
+│   │   │   └── logo-white.png
+│   │   └── product_images/
+│   │       ├── kebab1.jpeg
+│   │       ├── kebab_01.jpg
+│   │       ├── kebab_02.jpg
+│   │       ├── kebab_03.jpg
+│   │       ├── kebab_05.jpg
+│   │       ├── kebab_06.jpg
+│   │       ├── kebab_07.jpg
+│   │       └── kebab_08.jpg
+│   │
 │   ├── templates/
+│   │   ├── add_product.html
+│   │   ├── base.html
+│   │   ├── contacts.html
 │   │   ├── index.html
-│   │   ├── menu.html
-│   │   └── order.html
-│   └── static/
-│       ├── css/
-│       └── js/
-├── migrations/
-├── tests/
-│   ├── test_basic.py
+│   │   ├── login.html
+│   │   ├── product.html
+│   │   └── products.html
+│   │
+│   ├── __init__.py
+│   ├── email_settings.py
+│   ├── models.py
+│   └── routes.py
+│
 ├── .env
-├── .gitignore
-├── app.py
-├── config.py
-├── requirements.txt
-└── README.md
-```
+├── manage.py
+└── run.py
 
+```
+## Explanation of Directories and Files
+
+- **.venv/**: Virtual environment directory.
+- **database/**: Contains the SQLite database file.
+  - `kebabine_db.sqlite`: The SQLite database file.
+- **kebabine/**: Main application directory.
+  - **static/**: Contains static files such as images and CSS.
+    - **images/**: General images for the site.
+      - `kebab-shop-bg.jpg`: Background image for the site.
+      - `logo-white.png`: Site logo.
+    - **product_images/**: Images of the products.
+      - `kebab1.jpeg`, `kebab_01.jpg`, ..., `kebab_08.jpg`: Product images.
+  - **templates/**: HTML templates for the site.
+    - `add_product.html`: Template for adding a product.
+    - `base.html`: Base template used by other templates.
+    - `contacts.html`: Contacts page template.
+    - `index.html`: Home page template.
+    - `login.html`: Login page template.
+    - `product.html`: Single product page template.
+    - `products.html`: Products listing page template.
+  - `__init__.py`: Initializes the Flask app.
+  - `email_settings.py`: Configuration for email settings.
+  - `models.py`: Database models.
+  - `routes.py`: Application routes.
+- **.env**: Environment variables file.
+- **manage.py**: Management script for database migrations.
+- **run.py**: Script to run the Flask app.
 
 ## Contributing
 
