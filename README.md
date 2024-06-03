@@ -15,6 +15,7 @@ Welcome to the **Kebabine** project! This repository contains a web application 
 
 ## Project Structure
 
+```
 Kebabine_using_Python_Flask/
 ├── app/
 │   ├── __init__.py
@@ -36,6 +37,7 @@ Kebabine_using_Python_Flask/
 ├── config.py
 ├── requirements.txt
 └── README.md
+```
 
 
 ## Contributing
