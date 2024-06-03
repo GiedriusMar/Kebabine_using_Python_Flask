@@ -25,7 +25,7 @@ def contacts():
 @login_required
 def add_product():
     if request.method == 'POST':
-        product = request.form['product']
+        product: str = request.form['product']
         price = float(request.form['price'])
         ingredients = request.form.get('ingredients')
         extra = request.form['extra']

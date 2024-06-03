@@ -14,6 +14,7 @@ class Product(db.Model):
     image_filename = db.Column(db.String(100), nullable=False, default='default.jpg')
     created_date = db.Column(db.DateTime, default=datetime.now(), nullable=True)
 
+#  Made corrections on def __init__
     def __init__(self, product, price, ingredients, extra, image_filename):
         self.product = product
         self.price = price

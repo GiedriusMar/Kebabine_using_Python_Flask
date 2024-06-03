@@ -61,5 +61,3 @@ admin = Admin(app)
 admin.add_view(MyModelView(User, db.session))
 admin.add_view(MyModelView(Product, db.session))
 
-
-# Migrate(app, db)
