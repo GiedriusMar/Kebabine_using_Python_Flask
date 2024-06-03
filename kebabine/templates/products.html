@@ -23,7 +23,7 @@
               <td> <a href="{{ url_for('product', id=product.product_id) }}"> {{ product.product }} </a> </td>
               <td style="text-align: center;">
                 {% if product.image_filename %}
-                <img src="{{ url_for('static', filename='product_images/' + product.image_filename) }}" alt="{{ product.product }}" width="70" height="70">
+                <a href="{{ url_for('product', id=product.product_id) }}"> <img src="{{ url_for('static', filename='product_images/' + product.image_filename) }}" alt="{{ product.product }}" width="70" height="70"></a>
             {% else %}
             No image available
             {% endif %}
