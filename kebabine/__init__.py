@@ -9,7 +9,9 @@ from flask_mail import Mail
 from kebabine.email_settings import EmailUser
 from flask_bcrypt import Bcrypt
 from os.path import join, dirname, realpath
-
+from kebabine.models import User
+from kebabine.models import *
+from kebabine import routes
 
 load_dotenv()
 
@@ -37,13 +39,12 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 db.create_all()
 
-from kebabine.models import User
-
 
 mail = Mail(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'product'
 login_manager.login_message_category = 'info'
+
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -62,14 +63,8 @@ class MyModelView(ModelView):
         return current_user.is_authenticated and current_user.email == USER.email
 
 
-from kebabine.models import *
-from kebabine import routes
-
-
 admin = Admin(app)
 admin.add_view(MyModelView(User, db.session))
 admin.add_view(MyModelView(Product, db.session))
 
-
 # Migrate(app, db)
-
