@@ -2,8 +2,6 @@ Welcome to the **Kebabine** project! This repository contains a web application 
 
 ## Table of Contents
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
@@ -14,57 +12,6 @@ Welcome to the **Kebabine** project! This repository contains a web application 
 - Process customer orders
 - Track order status
 - Manage menu items (add, edit, delete)
-
-## Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/GiedriusMar/Kebabine_using_Python_Flask.git
-   cd Kebabine_using_Python_Flask
-   ```
-
-2. **Create a virtual environment**
-   ```bash
-   python3 -m venv venv
-   ```
-
-3. **Activate the virtual environment**
-   - On macOS/Linux:
-     ```bash
-     source venv/bin/activate
-     ```
-   - On Windows:
-     ```bash
-     venv\Scripts\activate
-     ```
-
-4. **Install the dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
-
-1. **Set up the environment variables**
-   Create a `.env` file in the root directory and add the following configurations:
-   ```
-   FLASK_APP=app.py
-   FLASK_ENV=development
-   ```
-
-2. **Initialize the database**
-   Ensure you have SQLite installed, then run:
-   ```bash
-   flask db init
-   flask db migrate -m "Initial migration."
-   flask db upgrade
-   ```
-
-3. **Run the application**
-   ```bash
-   flask run
-   ```
-   Open your browser and navigate to `http://127.0.0.1:5000` to see the application in action.
 
 ## Project Structure
 
