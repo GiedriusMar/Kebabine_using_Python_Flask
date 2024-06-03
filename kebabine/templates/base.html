@@ -10,7 +10,7 @@
 <body>
 <header>
     <nav class="navbar">
-        <img class="main-logo" src="static/images/logo-white.png" alt="Arnoldo-kebabine-logo">
+        <img class="main-logo" src="{{ url_for('static', filename='images/logo-white.png') }}" alt="Arnoldo-kebabine-logo">
         <div>
             <a href="/">Home</a>
             <a href="{{ url_for('products') }}">Products</a>
