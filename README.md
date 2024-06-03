@@ -1,4 +1,9 @@
-Welcome to the **Kebabine** project! This repository contains a web application built with Python and Flask. The application simulates a kebab shop, providing functionalities such as menu display, order processing, and more.
+# Kebabine using Python Flask
+
+## Introduction
+Welcome to my **Kebabine** project! 
+This repository is a demonstration of a web application developed using Python and Flask. As I am student learning Python and Flask, this project is designed to help you understand the basics of web development with Python and Flask technologies. 
+The application simulates a simple kebab shop where users can browse the menu, place orders, etc.
 
 ## Table of Contents
 - [Features](#features)
@@ -8,10 +13,10 @@ Welcome to the **Kebabine** project! This repository contains a web application 
 - [Contact](#contact)
 
 ## Features
-- Display a menu of available kebabs
-- Process customer orders
-- Track order status
-- Manage menu items (add, edit, delete)
+- **User Authentication**: Register and log in to access personalized features.
+- **Menu Management**: View a list of available kebabs with details and prices.
+- **Order Placement**: Add items to the cart and place orders.
+- **Order History**: View past orders with details.
 
 ## Project Structure
 
