@@ -16,8 +16,8 @@ The application simulates a simple kebab shop where users can browse the menu, p
 ## Features
 - **User Authentication**: Register and log in to access personalized features.
 - **Menu Management**: View a list of available kebabs with details and prices.
-- **Order Placement**: Add items to the cart and place orders.
-- **Order History**: View past orders with details.
+- **Upload new product via HTML form**: Add new items to the database includin product picture.
+- **Delete product**: Delete product from database just from HTML Admin page.
 
 ## Project Structure
 
