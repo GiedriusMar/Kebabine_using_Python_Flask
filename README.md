@@ -25,8 +25,6 @@ The application simulates a simple kebab shop where users can browse the menu, p
 ```
 PYTHON PROJECT/
 │
-├── .venv/
-│
 ├── database/
 │   └── kebabine_db.sqlite
 │
@@ -66,7 +64,6 @@ PYTHON PROJECT/
 ```
 ## Explanation of Directories and Files
 
-- **.venv/**: Virtual environment directory.
 - **database/**: Contains the SQLite database file.
   - `kebabine_db.sqlite`: The SQLite database file.
 - **kebabine/**: Main application directory.
