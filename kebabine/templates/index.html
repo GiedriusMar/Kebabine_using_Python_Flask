@@ -1,6 +1,7 @@
 {%extends "base.html" %}
 
 {% block content %}
+<br>
 <h5>HOME page</h5>
 <section class="homepage">
     <p>Welcome to ARNOLDAS Kebab Shop, where we bring the authentic flavors of the Mediterranean right to your plate!</p>
@@ -15,6 +16,7 @@
             and our famous garlic fries</li>
         <li>Desserts: Don’t miss our baklava and other sweet treats to end your meal on a high note.</li>
     </div>
+        <p><a href="{{ url_for('products') }}">Choose from our products</a>, or maybe even better - <a href="{{ url_for('contacts') }}">visit us</a> directly - on beautiful Lithuanian seashore!</p>
 </section>
 
 {% endblock %}
