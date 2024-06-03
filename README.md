@@ -66,7 +66,7 @@ PYTHON PROJECT/
 
 - **database/**: Contains the SQLite database file.
   - `kebabine_db.sqlite`: The SQLite database file.
-- **kebabine/**: Main application directory.
+- **kebabine/**: Main application directory (Python Package).
   - **static/**: Contains static files such as images and CSS.
     - **images/**: General images for the site.
       - `kebab-shop-bg.jpg`: Background image for the site.
