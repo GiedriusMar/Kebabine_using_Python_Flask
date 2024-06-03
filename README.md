@@ -3,8 +3,8 @@
 ## Introduction
 Welcome to my **Kebabine** project! 
 This repository is a demonstration of a web application developed using Python and Flask. 
-As I am begginer student learning Python and Flask, this project is designed to help you understand the basics of web development with Python and Flask technologies. 
-The application simulates a simple kebab shop where users can browse the menu. Authorised person (Admin) after log-in can upload new product, delete product, etc.
+As I am just begginer student learning Python and Flask, this project is designed to help you understand the basics of web development using Python and Flask technologies. 
+The application simulates a simple "Kebab shop" website where users can browse the menu. Authorised person (Admin) after logging-in can upload new product (direct from website application), delete product, etc.
 
 ## Table of Contents
 - [Features](#features)
