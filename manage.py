@@ -32,11 +32,11 @@ db.create_all()
 #     extra='Garlic sauce',
 # )
 
-user = User(
-    name=USER.name,
-    email=USER.email,
-    password=USER.password,
-)
+# user = User(
+#     name=USER.name,
+#     email=USER.email,
+#     password=USER.password,
+# )
 
 #  db.session.add_all([product])
 #  db.session.commit()

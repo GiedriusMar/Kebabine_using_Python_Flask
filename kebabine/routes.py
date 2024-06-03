@@ -1,7 +1,7 @@
 from flask import render_template, request, redirect, url_for, flash
 from kebabine import app, db, bcrypt
 from kebabine.models import Product, User
-from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+from flask_login import login_user, login_required, logout_user, current_user
 import os
 
 
@@ -30,16 +30,21 @@ def add_product():
         ingredients = request.form.get('ingredients')
         extra = request.form['extra']
         image = request.files['image']
+
         if image and image.filename != '':
             image_filename = image.filename
             image_path = os.path.join(app.config['UPLOAD_FOLDER'], image_filename)
             image.save(image_path)
         else:
-            image_filename = None
-            new_product = Product(product=product, price=price, ingredients=ingredients, extra=extra, image_filename=image_filename)
-            db.session.add(new_product)
-            db.session.commit()
-            return redirect(url_for('products'))
+            image_filename = 'default.jpg'
+
+        new_product = Product(product=product, price=price, ingredients=ingredients, extra=extra,
+                              image_filename=image_filename)
+        db.session.add(new_product)
+        db.session.commit()
+        flash('Product added successfully!', 'success')
+        return redirect(url_for('products'))
+
     return render_template('add_product.html')
 
 
@@ -51,10 +56,10 @@ def product(id):
 
 @app.route("/products/<int:id>/delete")
 def delete_product(id):
-    print('Delete')
     one_product = Product.query.get(id)
     db.session.delete(one_product)
     db.session.commit()
+    flash('Product deleted successfully!', 'success')
     return redirect(url_for('products'))
 
 
@@ -64,11 +69,10 @@ def login():
         username = request.form['username']
         password = request.form['password']
         user = User.query.filter_by(name=username).first()
-        #if user and bcrypt.check_password_hash(user.password, password):
         if user and (user.password == password):
             flash('You have successfully logged in!', "success")
             login_user(user)
-            return redirect(url_for('login'))
+            return redirect(url_for('index'))
         else:
             flash('Invalid username or password!')
     return render_template('login.html')
@@ -79,8 +83,4 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('index'))
-
-@app.route("/test_page")
-def test_page():
-    return render_template("test_page.html")
 

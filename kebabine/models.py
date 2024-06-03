@@ -14,11 +14,13 @@ class Product(db.Model):
     image_filename = db.Column(db.String(100), nullable=False, default='default.jpg')
     created_date = db.Column(db.DateTime, default=datetime.now(), nullable=True)
 
-    def __init__(self, product, price, ingredients, extra):
+    def __init__(self, product, price, ingredients, extra, image_filename):
         self.product = product
         self.price = price
         self.ingredients = ingredients
         self.extra = extra
+        self.image_filename = image_filename
+
 
     def __repr__(self):
         return f'{self.product} - {self.price}'

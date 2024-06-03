@@ -1,22 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <br>
+<br>
 <section>
     <div class="product">
-    <h2> You have chosen:  {{ id }} </h2>
-    <h3> {{ product.product }} </h3>
-    <h4> Ingredients: {{ product.ingredients }} </h4>
-    <h4> Extra added: {{ product.extra }} </h4>
-    <h4> Price: {{ product.price }} EUR </h4>
-        {% if current_user.is_authenticated %}
-    <a href="{{ url_for('delete_product', id=product.product_id) }}"> <button class="redbtn">Delete this product</button></a>
-        {% endif %}
-        <br>
-    <hr>
-    <a href="{{ url_for('products') }}"> <button class="btn">Back to Products</button></a>
-
-</div>
+        <table class="oneproduct">
+            <tr>
+                <td class="product-image">
+                    <img src="{{ url_for('static', filename='product_images/' + product.image_filename) }}" alt="{{ product.product }}">
+                </td>
+                <td class="product-details">
+                    <h3>{{ product.product }}</h3>
+                    <h4>Ingredients: {{ product.ingredients }}</h4>
+                    <h4>Extra added: {{ product.extra }}</h4>
+                    <h4>Price: {{ product.price }} EUR</h4>
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="product-buttons">
+            {% if current_user.is_authenticated %}
+                <a href="{{ url_for('delete_product', id=product.product_id) }}">
+                    <button class="redbtn">Delete this product</button>
+                </a>
+            {% endif %}
+            <a href="{{ url_for('products') }}">
+                <button class="btn">Back to Products</button>
+            </a>
+        </div>
 </section>
-
 {% endblock %}
+
