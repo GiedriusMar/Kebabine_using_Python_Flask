@@ -2,7 +2,7 @@
 
 ## Introduction
 Welcome to my **Kebabine** project! 
-This repository is a demonstration of a web application developed using Python and Flask. 
+This repository is a demonstration of a web application developed using Python 3.12 and Flask 3.0.3. 
 As I am just begginer student learning Python and Flask, this project is designed to help you understand the basics of web development using Python and Flask technologies. 
 The application simulates a simple "Kebab shop" website where users can browse the menu. Authorised person (Admin) after logging-in can upload new product (direct from website application), delete product, etc.
 
@@ -10,6 +10,12 @@ The application simulates a simple "Kebab shop" website where users can browse t
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Explanation of Directories and Files](#explanation-of-directories-and-files)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Setting Up Virtual Environment](#setting-up-virtual-environment)
+  - [Windows](#windows)
+  - [Linux/Mac](#linuxmac)
+- [Running the Application](#running-the-application)
 - [License](#license)
 - [Contact](#contact)
 
@@ -90,6 +96,80 @@ PYTHON PROJECT/
 - **requirements.txt**: List of required Python libraries for the project.
 - **run.py**: Script to run the Flask app.
 
+## Technologies Used
+- **Python 3.12**
+- **Flask 3.0.3**
+- **HTML 5 / CSS 3**
+
+## Getting Started
+
+To run this project on your local machine, follow the steps below:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/GiedriusMar/Kebabine_using_Python_Flask.git
+    cd Kebabine_using_Python_Flask
+    ```
+
+2. Set up a virtual environment:
+    See [Setting Up Virtual Environment](#setting-up-virtual-environment) for detailed instructions.
+
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. Set up your environment variables by creating a `.env` file in the root directory and adding the necessary configurations.
+
+5. Initialize the database:
+    ```bash
+    python manage.py init_db
+    ```
+
+6. Run the application:
+    ```bash
+    python run.py
+    ```
+
+7. Open your browser and go to `http://127.0.0.1:5000/` to see the application running.
+
+## Setting Up Virtual Environment
+
+### Windows
+
+1. Open Command Prompt.
+2. Navigate to your project directory.
+3. Create a virtual environment:
+    ```bash
+    python -m venv .venv
+    ```
+4. Activate the virtual environment:
+    ```bash
+    venv\Scripts\activate
+    ```
+
+### Linux/Mac
+
+1. Open Terminal.
+2. Navigate to your project directory.
+3. Create a virtual environment:
+    ```bash
+    python3 -m venv .venv
+    ```
+4. Activate the virtual environment:
+    ```bash
+    source venv/bin/activate
+    ```
+
+## Running the Application
+
+After setting up the virtual environment and installing the dependencies, you can run the application using:
+
+```bash
+python run.py
+```
+
+Then, navigate to `http://127.0.0.1:8000/` in your web browser to access the application.
 
 ## License
 
@@ -100,7 +180,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 If you have any questions, feel free to reach out:
 
 - **Giedrius Mar** - [GitHub](https://github.com/GiedriusMar)
-
-P.S. Feel free to customize the sections further based on any specific details or additional functionalities you want to highlight in the repository.
 
 Happy coding!
