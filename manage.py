@@ -1,3 +1,6 @@
+#  This is management script for database migrations and data uploading to database manually.
+
+"""
 from kebabine import db, USER
 from kebabine.models import Product, User
 
@@ -38,6 +41,8 @@ db.create_all()
 #     password=USER.password,
 # )
 
-#  db.session.add_all([product])
+#  db.session.add_all([product, product_1, product_2, product_3, user])
 #  db.session.commit()
 
+
+"""
