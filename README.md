@@ -8,7 +8,7 @@ The application simulates a simple "Kebab shop" website where users can browse t
 
 ##
 This `README.md` file provides an overview of your project, instructions for setting up a virtual environment, and how to get started with running the application. Adjust the sections as needed for your specific project requirements.
-
+##
 
 ## Table of Contents
 - [Features](#features)
