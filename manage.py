@@ -7,6 +7,8 @@ from kebabine.models import Product, User
 
 db.create_all()
 
+#   Upload product(s) data to database:
+
 product = Product(
     product='Chicken Kebab in Lavash',
     price=7.00,
@@ -34,6 +36,8 @@ product = Product(
 #     ingredients='Beef, Chinese cabbage, Tomatoes, Cucumbers, Onions',
 #     extra='Garlic sauce',
 # )
+
+#   Upload user's data to database:
 
 user = User(
     name=USER.name,
