@@ -7,14 +7,14 @@ from kebabine.models import Product, User
 
 db.create_all()
 
-#  product = Product(
-#      product='Chicken Kebab in Lavash',
-#      price=7.00,
-#      ingredients='Lavash, Chicken meat, Chinese cabbage, Tomatoes, Cucumbers, Pickles',
-#      extra='Garlic sauce',
-#      image_filename='kebab1.jpeg',
-#  )
-#
+product = Product(
+    product='Chicken Kebab in Lavash',
+    price=7.00,
+    ingredients='Lavash, Chicken meat, Chinese cabbage, Tomatoes, Cucumbers, Pickles',
+    extra='Garlic sauce',
+    image_filename='kebab1.jpeg',
+)
+
 # product_1 = Product(
 #     product='Lamb Kebab in Lavash',
 #     price=9.50,
@@ -35,14 +35,14 @@ db.create_all()
 #     extra='Garlic sauce',
 # )
 
-# user = User(
-#     name=USER.name,
-#     email=USER.email,
-#     password=USER.password,
-# )
+user = User(
+    name=USER.name,
+    email=USER.email,
+    password=USER.password,
+)
 
-#  db.session.add_all([product, product_1, product_2, product_3, user])
-#  db.session.commit()
+db.session.add_all([product, product_1, product_2, product_3, user])
+db.session.commit()
 
 
 """
