@@ -10,7 +10,6 @@ The application simulates a simple "Kebab shop" website where users can browse t
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Explanation of Directories and Files](#explanation-of-directories-and-files)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -65,7 +64,7 @@ PYTHON PROJECT/
 ## Explanation of Directories and Files
 
 - **database/**: Contains the SQLite database file.
-  - `kebabine_db.sqlite`: The SQLite database file.
+  - `kebabine_db.sqlite`: The SQLite database file (please create one by yourself).
 - **kebabine/**: Main application directory (Python Package).
   - **static/**: Contains static files such as images and CSS.
     - **images/**: General images for the site.
@@ -85,19 +84,10 @@ PYTHON PROJECT/
   - `email_settings.py`: Configuration for email settings.
   - `models.py`: Database models.
   - `routes.py`: Application routes.
-- **.env**: Environment variables file.
-- **manage.py**: Management script for database migrations.
+- **.env**: Environment variables file (please create one by yourself using your own credentials).
+- **manage.py**: Management script for database migrations and manual data uploading to database.
 - **run.py**: Script to run the Flask app.
 
-## Contributing
-
-We welcome contributions to improve this project! To contribute:
-
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes and commit them.
-4. Push your branch to your forked repository.
-5. Create a pull request with a description of your changes.
 
 ## License
 
