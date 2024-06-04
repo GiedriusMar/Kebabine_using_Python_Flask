@@ -19,11 +19,13 @@ The application simulates a simple "Kebab shop" website where users can browse t
 - [License](#license)
 - [Contact](#contact)
 
+
 ## Features
 - **Menu Management**: View a list of available products with details, product pictures and prices.
 - **User Authentication**: Log in to access personalized features (to add or delete products from DB).
 - **Upload new product via HTML form**: Add new item (upload product) to database, including product picture - direct from website HTML application.
 - **Delete product**: Delete product from database - direct from website HTML application.
+
 
 ## Project Structure
 
@@ -68,6 +70,7 @@ PYTHON PROJECT/
 └── run.py
 
 ```
+
 ## Explanation of Directories and Files
 
 - **database/**: Contains the SQLite database file.
@@ -96,10 +99,12 @@ PYTHON PROJECT/
 - **requirements.txt**: List of required Python libraries for the project.
 - **run.py**: Script to run the Flask app.
 
+
 ## Technologies Used
 - **Python 3.12**
 - **Flask 3.0.3**
 - **HTML 5 / CSS 3**
+
 
 ## Getting Started
 
@@ -133,6 +138,7 @@ To run this project on your local machine, follow the steps below:
 
 7. Open your browser and go to `http://127.0.0.1:5000/` to see the application running.
 
+
 ## Setting Up Virtual Environment
 
 ### Windows
@@ -161,6 +167,7 @@ To run this project on your local machine, follow the steps below:
     source venv/bin/activate
     ```
 
+
 ## Running the Application
 
 After setting up the virtual environment and installing the dependencies, you can run the application using:
@@ -168,8 +175,8 @@ After setting up the virtual environment and installing the dependencies, you ca
 ```bash
 python run.py
 ```
-
 Then, navigate to `http://127.0.0.1:8000/` in your web browser to access the application.
+
 
 ## Structure of .env file
 DATABASE_URL = 'link to your local database'
@@ -180,9 +187,11 @@ USER_PASSWORD = 'your password'
 
 SECRET_KEY = 'your secret key'
 
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
 
 ## Contact
 
