@@ -91,7 +91,7 @@ PYTHON PROJECT/
   - `email_settings.py`: Configuration for email settings.
   - `models.py`: Database models.
   - `routes.py`: Application routes.
-- **.env**: Environment variables file. Please create one by yourself using your own credentials: (#Structure of .env file).
+- **.env**: Environment variables file. Please create one by yourself using your own credentials: (#structure-of-.env-file).
 - **manage.py**: Management script for database migrations and manual data uploading to database.
 - **requirements.txt**: List of required Python libraries for the project.
 - **run.py**: Script to run the Flask app.
