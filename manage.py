@@ -1,4 +1,5 @@
 #  This is management script for database migrations and data uploading to database manually.
+#  All Product data here is just as sample.
 
 """
 from kebabine import db, USER
