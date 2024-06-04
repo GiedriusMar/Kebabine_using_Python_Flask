@@ -6,6 +6,10 @@ This repository is a demonstration of a web application developed using Python 3
 As I am just begginer student learning Python and Flask, this project is designed to help you understand the basics of web development using Python and Flask technologies. 
 The application simulates a simple "Kebab shop" website where users can browse the menu. Authorised person (Admin) after logging-in can upload new product (direct from website application), delete product, etc.
 
+##
+This `README.md` file provides an overview of your project, instructions for setting up a virtual environment, and how to get started with running the application. Adjust the sections as needed for your specific project requirements.
+
+
 ## Table of Contents
 - [Features](#features)
 - [Project Structure](#project-structure)
