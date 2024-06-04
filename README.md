@@ -58,6 +58,7 @@ PYTHON PROJECT/
 │
 ├── .env
 ├── manage.py
+├── requirements.txt
 └── run.py
 
 ```
@@ -86,6 +87,7 @@ PYTHON PROJECT/
   - `routes.py`: Application routes.
 - **.env**: Environment variables file (please create one by yourself using your own credentials).
 - **manage.py**: Management script for database migrations and manual data uploading to database.
+- **requirements.txt**: List of required Python libraries for the project.
 - **run.py**: Script to run the Flask app.
 
 
