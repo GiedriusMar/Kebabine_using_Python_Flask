@@ -91,7 +91,7 @@ PYTHON PROJECT/
   - `email_settings.py`: Configuration for email settings.
   - `models.py`: Database models.
   - `routes.py`: Application routes.
-- **.env**: Environment variables file (please create one by yourself using your own credentials).
+- **.env**: Environment variables file. Please create one by yourself using your own credentials: (#Structure of .env file).
 - **manage.py**: Management script for database migrations and manual data uploading to database.
 - **requirements.txt**: List of required Python libraries for the project.
 - **run.py**: Script to run the Flask app.
@@ -170,6 +170,15 @@ python run.py
 ```
 
 Then, navigate to `http://127.0.0.1:8000/` in your web browser to access the application.
+
+## Structure of .env file
+DATABASE_URL = 'link to your local database'
+
+USER_NAME = 'your username'
+USER_EMAIL = 'your email'
+USER_PASSWORD = 'your password'
+
+SECRET_KEY = 'your secret key'
 
 ## License
 
