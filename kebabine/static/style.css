@@ -165,6 +165,7 @@ color: yellow;
 .oneproduct td {
     vertical-align: top;
     padding: 10px;
+    border: none;
 }
 
 .product-image img {
@@ -172,4 +173,7 @@ color: yellow;
     margin: 0 auto;
 }
 
+.product-buttons {
+text-align: center;
+}
 /*Keep changing*/
